@@ -1,5 +1,5 @@
 
-![enter image description here](https://github.com/huexpub/IRMQTT/blob/master/pic/irmqtt.jpg?raw=true)
+![enter image description here](https://github.com/mysens-cn/IRMQTT/blob/master/pic/irmqtt.jpg?raw=true)
 
 >>> 2019-08-29更新了可反馈性WEB使用说明及识别品牌
 
@@ -22,7 +22,7 @@ https://github.com/crankyoldgit/IRremoteESP8266/blob/master/SupportedProtocols.m
 ### PCB
 本次PCB文件单体制造难度较大，新手尽量转移到ESP12F项目和ESP01F改装模块！高手可进
 
-项目地址: https://github.com/huexpub/IRMQTT
+项目地址: https://github.com/mysens-cn/IRMQTT
 
 * 分支包含ESP01F文件和ESP12F文件，默认为IRMQTT USB公插版本，
 * 固件目前测试可以通用，如果内部为ESP01F，会有OTA文件限制！
@@ -31,7 +31,7 @@ https://github.com/crankyoldgit/IRremoteESP8266/blob/master/SupportedProtocols.m
 ### 贴装
 PCB贴装，请控制好你的烙铁温度，保持300以内，针对发射贴片，请避免长时间操作
 
-![enter image description here](https://github.com/huexpub/IRMQTT/blob/master/pic/pcb.jpg?raw=true)
+![enter image description here](https://github.com/mysens-cn/IRMQTT/blob/master/pic/pcb.jpg?raw=true)
 
 * 保持发射贴片丝印标记正确，除中心发射元件，其它保持45度角以得到更好的发射范围
 * 由于接收元件外露在3D外壳之外，请确保元件正中，否则外壳无法安装
@@ -43,7 +43,7 @@ PCB贴装，请控制好你的烙铁温度，保持300以内，针对发射贴�
 ### 3D
  3D外壳为上、下沉方式，需要M2沉头螺丝两颗，目前设计的螺丝帽直径最大为4.5MM 沉头内六角螺丝。
  
-![enter image description here](https://github.com/huexpub/IRMQTT/blob/master/pic/irmqtt-stl.png?raw=true)
+![enter image description here](https://github.com/mysens-cn/IRMQTT/blob/master/pic/irmqtt-stl.png?raw=true)
 
 ## 安装使用：
 软件采用WIFIMANAGER配网，上电后，搜索IRMQTT热点，连接上，转入配网WEB页面，未弹出请尝试访问192.168.4.1地址
@@ -53,23 +53,23 @@ PCB贴装，请控制好你的烙铁温度，保持300以内，针对发射贴�
 >请务必保证MQTT服务器地址正确，否则可能无法进入WEB页面，并且无法重新配置！
 
 
-![enter image description here](https://github.com/huexpub/IRMQTT/blob/master/pic/irmqtt-wifi.gif?raw=true)
+![enter image description here](https://github.com/mysens-cn/IRMQTT/blob/master/pic/irmqtt-wifi.gif?raw=true)
 
 ### 使用
 进入配置的IRMQTT设备IP WEB，页面如下：
 
-![enter image description here](https://github.com/huexpub/IRMQTT/blob/master/pic/irmqtt-web.gif?raw=true)
+![enter image description here](https://github.com/mysens-cn/IRMQTT/blob/master/pic/irmqtt-web.gif?raw=true)
 
 选择对应的空调型号，模式，电源，温度，并点击 UPDATE/SEND，空调有反应后，视为有效型号，若无反应，请对应尝试model 1-6子设备型号，如均无反应，可能不被支持。
 
 ### 反馈
 如何知道IRMQTT模块是否已经能正常的反馈呢，你可以使用MQTT工具监听。如下图GIF演示！
 
-![enter image description here](https://github.com/huexpub/IRMQTT/blob/master/pic/irmqtt-mqtt.gif?raw=true)
+![enter image description here](https://github.com/mysens-cn/IRMQTT/blob/master/pic/irmqtt-mqtt.gif?raw=true)
 
 *  默认连接上MQTT后，出来的型号和设备等是默认生成的，不是接收到的
 * 操作之后能出现ON OFF和有效的数据源，视为可反馈，
-* 关于监听工具，你可以使用docker 镜像  huex/webzsh:armbian (https://mysensor.pub/gateway/webzsh/)
+* 关于监听工具，你可以使用docker 镜像  huex/webzsh:armbian (https://mysens.cn/gateway/webzsh/)
 
 
 ### 识别
@@ -212,7 +212,7 @@ climate:
 总结即： OTA--MINI 固件--正常固件
 
 以下为演示：
-![enter image description here](https://github.com/huexpub/IRMQTT/blob/master/pic/irmqtt-ota.gif?raw=true)
+![enter image description here](https://github.com/mysens-cn/IRMQTT/blob/master/pic/irmqtt-ota.gif?raw=true)
   
 ## SMT开车
   此次为了方便各位，目前已经将PCB 容阻元件、三极管、LED、LDO 采用 SMT 小批量产，到手只需要焊接发射元件、接收元件、USB、天线贴片、ESP01，极容易操作的元件部分！方便能DIY并且有3D打印机的小伙伴!
